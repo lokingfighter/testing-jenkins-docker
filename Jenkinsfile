@@ -26,7 +26,7 @@ pipeline {
       }
     }
     stage('Test on CentOS') {
-      agent { 'docker' 
+      agent { docker 
         'fabric8/java-centos-openjdk8-jdk:1.4.0'
       }
         steps {
@@ -35,7 +35,7 @@ pipeline {
       }
     }
     stage('Test on Debian') {
-      agent { 'docker' 
+      agent { docker 
         'openjdk:8u121-jre'
       }
         steps {
